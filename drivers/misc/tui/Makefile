@@ -6,7 +6,7 @@ ccflags-y += -Idrivers/video/fbdev/exynos/dpu30
 
 ccflags-y += -I$(srctree)/drivers/misc/tui/
 ccflags-y += -I$(srctree)/drivers/misc/tui/platforms/exynos2100
-ccflags-y += -Idrivers/misc/tzdev/include/tzdev
+ccflags-y += -I$(srctree)/drivers/misc/tzdev/include/tzdev
 
 ccflags-y += -DUSE_TEE_CLIENT_API
 tuihw-inf-objs := stui_inf.o
