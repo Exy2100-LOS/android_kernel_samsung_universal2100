@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 
-ccflags-y := -Wformat
+ccflags-y := -Wno-error
 
 obj-$(CONFIG_SEC_MISC)		+= misc/
 obj-$(CONFIG_SEC_PM)		+= pm/

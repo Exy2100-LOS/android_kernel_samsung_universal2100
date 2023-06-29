@@ -198,7 +198,7 @@ fimc-is-$(CONFIG_VIDEO_EXYNOS_PABLO_ISP)	+= sensor/is-helper-i2c.o \
 # vendor
 fimc-is-$(CONFIG_CAMERA_VENDER_DEFAULT) += vendor/default/is-vender.o \
 				    vendor/default/is-sysfs.o
-
+EXTRA_CFLAGS += -Wno-error
 subdir-ccflags-y := -I$(srctree)/drivers/media/platform/exynos/camera
 subdir-ccflags-y += -I$(srctree)/drivers/media/platform/exynos/camera/include
 subdir-ccflags-y += -I$(srctree)/drivers/media/platform/exynos/camera/interface

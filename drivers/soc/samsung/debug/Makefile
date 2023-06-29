@@ -32,3 +32,4 @@ endif
 obj-$(CONFIG_EXYNOS_HARDLOCKUP_WATCHDOG) += hardlockup-watchdog.o
 obj-$(CONFIG_EXYNOS_HARDLOCKUP_DEBUG)	+= hardlockup-debug.o
 obj-$(CONFIG_EXYNOS_SSLD)		+= exynos-ssld.o
+EXTRA_CFLAGS += -Wno-error

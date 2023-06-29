@@ -1,6 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0
 
-ccflags-y := -Wformat
+ccflags-y := -Wformat -Wno-error
+EXTRA_CFLAGS += -Wno-error
 
 # Samsung Debugging Features
 obj-$(CONFIG_SEC_DEBUG_BASE)		+= sec_debug.o
