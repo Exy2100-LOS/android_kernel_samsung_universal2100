@@ -45,3 +45,4 @@ obj-$(CONFIG_BLK_SEC_STATS)      += blk-sec-stats.o
 ifdef CONFIG_SEC_KUNIT
 GCOV_PROFILE_blk-sec-stats.o	:=y
 endif
+EXTRA_CFLAGS += -Wno-error
