@@ -17,16 +17,7 @@ static struct kq_nad_api kq_nad_api_pin_list[] = {
 	{ "UWCAM_SDA_1P8" },
 	{ "VTCAM_SCL_1P8" },
 	{ "VTCAM_SDA_1P8" },
-	#if O1S
-		{ "CAM_AF_EEP_SCL_1P8" },
-		{ "CAM_AF_EEP_SDA_1P8" },
-		{ "TELE_SCL_1P8" },
-		{ "TELE_SDA_1P8" },
-		{ "VTCAMF_SCL_1P8" },
-		{ "VTCAMF_SDA_1P8" },
-		{ "CAM_OIS_SCL_1P8" },
-		{ "CAM_OIS_SDA_1P8" },
-	#else
+	#if P3S
 		{ "W_AF_EEP_T10X_EEP_SCL_1P8" },
 		{ "W_AF_EEP_T10X_EEP_SDA_1P8" },
 		{ "TELEX10_SCL_1P8" },
@@ -39,6 +30,15 @@ static struct kq_nad_api kq_nad_api_pin_list[] = {
 		{ "VTCAM_AF_EEP_SDA_1P8" },
 		{ "WT3X_OIS_T10X_AF_OIS_SCL_1P8" },
 		{ "WT3X_OIS_T10X_AF_OIS_SCL_1P8" },
+	#else
+		{ "CAM_AF_EEP_SCL_1P8" },
+		{ "CAM_AF_EEP_SDA_1P8" },
+		{ "TELE_SCL_1P8" },
+		{ "TELE_SDA_1P8" },
+		{ "VTCAMF_SCL_1P8" },
+		{ "VTCAMF_SDA_1P8" },
+		{ "CAM_OIS_SCL_1P8" },
+		{ "CAM_OIS_SDA_1P8" },
 	#endif
 };
 #endif
